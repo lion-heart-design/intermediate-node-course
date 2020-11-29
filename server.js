@@ -3,6 +3,8 @@ const mongoose= require('mongoose');
 const bodyParser= require('body-parser');
 const port=8000;
 const app= express();
+const User=require('./models/User');
+mongoose.connect('mongodb://127.0.0.1:27017/userData')
 
 app.use(bodyParser.json());
 
